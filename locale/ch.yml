@@ -1,0 +1,283 @@
+default:
+    pages: "Page $current$ of $max$"
+    currently: Currently
+errors:
+    argumentslength: "参数的数目不匹配正确的数量!"
+    packagenotfound: "不能获取 $package$ 包!"
+    classnotfound: "不能获取 $package$ 类 $class$!"
+    gameexists: "这个名字的游戏已经存在!"
+    gamenotfound: "游戏 '$game$' 没有找到!"
+    gamenotfoundsimple: "没有找到该游戏!"
+    playeramount: "玩家的最大不能低于1或高于24!"
+    teamcolornotallowed: "给定的团队颜色是不允许的颜色"
+    teamnamelength: "团队名称必须有2至20个字符!"
+    teamnotfound: "没有找到该团队!"
+    notingame: "你现在不在游戏中!"
+    bedtargeting: "你必须站在 'game-block' 选项设置的方块上进行操作!"
+    regionargument: "你只能输入 'loc1' 或 'loc2'!"
+    spawnerargument: "资源参数必须是有效配置的资源!"
+    blockdownnotfound: "你站着的那块没找到!"
+    gamenotrunning: "游戏没有运行!"
+    bungeenoserver: "bungeecord服务器没有设置正确！请汇报管理员!"
+    cantstartagain: "游戏正在运行！你不能再开始一场比赛了!"
+    startoutofwaiting: "游戏必须启动的等待模式!"
+    cantjoingame: "你不能加入开始或停止的游戏!"
+    lobbyongameworld: "大厅不能在游戏世界!"
+    gamenotloaded: "无法启动游戏!"
+    gameloaderror: "载入 '$game$' 出现一个错误!"
+    regionnotfound: "区域文件不存在!"
+    savesign: "无法创建一个新的配置文件!"
+    nogames: "没有找到游戏!"
+    notenoughress: "你没有足够的资源来购买这个物品!"
+    teamnameinuse: "团队名称已在使用中!"
+    minplayersmustnumber: "最小玩家数必须是一个数字类型!"
+    toolongregionname: "最大长度为15个字符!"
+    notwhilegamerunning: "在游戏运行时不能这样做!"
+    notwhileingame: "当你在游戏中的时候，你不能这样做!"
+    teamnotfound: "团队没有找到!"
+    timeincorrect: "时间必须是一个数字（0…23000），'day'或'night'!"
+    minplayersnumeric: "最小玩家参数必须是数字!"
+    notinair: "你不在空中!"
+    teamfull: "该队伍目前人数过多，你无法加入一个不平衡的队伍!"
+    novalidmaterial: "给定的方块类型（材料）是不正确的!"
+    wrongvalueonoff: "错误参数! 使用 true,on,1 开开启 - 使用 false,off,0 来关闭!"
+    playernotfound: "给定的玩家没有找到或不在线!"
+    notingameforkick: "你一定要在一个游戏中踢出一个玩家!"
+    playernotingame: "玩家不在在这个游戏!"
+    mustbeinlobbyworld: "你必须在游戏大厅的世界里"
+    addteamjoincancel: "加入团队被取消!"
+    entitynotcompatible: "这个实体与团队的加入是不兼容的!"
+success:
+    gameadded: "新游戏 '$game$' 成功添加!"
+    teamadded: "队伍 '$team$' 成功添加!"
+    joined: "您成功加入游戏!"
+    left: "您成功离开游戏!"
+    saved: "游戏成功保存!"
+    bedset: "您设置了队伍 $team$ 的床!"
+    regionset: "游戏 $game$ 的地点 $location$  成功设置!"
+    spawnset: "队伍 $team$ 的出生点成功设置!"
+    spawnerset: " $name$ 资源产生点成功设置!"
+    stopped: "游戏强制停止成功!"
+    lobbyset: "成功设置等待大厅!"
+    gameloaded: "游戏 '$game$' 成功加载!"
+    reloadconfig: "重载成功!"
+    teamremoved: "成功移除队伍!"
+    gameremoved: "成功移除游戏!"
+    spawnercleared: "所有的资源点都移除了!"
+    gamerun: "你开启了游戏，玩家现在可以加入!"
+    timeset: "成功设置游戏时间!"
+    regionnameset: "游戏名字设置成功!"
+    minplayersset: "成功设置最小玩家数!"
+    mainlobbyset: "成功设置重要的大厅!"
+    gametimeset: "游戏时间成功设置!"
+    materialset: "重生方块类型设置成功!"
+    builderset: "地图的生成器被设置成功，并将在标题中显示!"
+    autobalanceseton: "自动平衡式成功打开!"
+    autobalancesetoff: "自动平衡成功设置为 &coff&a!"
+    selectteamjoinentity: "现在做一个正确的点击你想要使用的实体作为团队加入!"
+    teamjoinadded: "实体被成功标记为团队的团队选择 $team$"
+    holoremoved: "成功删除全息图统计!"
+gamecheck:
+    LOC_NOT_SET_ERROR: "区域的位置没有设置正确!"
+    TEAM_SIZE_LOW_ERROR: "你必须设置更多的团队!"
+    NO_RES_SPAWNER_ERROR: "你没有设置任何的资源点!"
+    NO_LOBBY_SET: "你没有设置大厅!"
+    TEAMS_WITHOUT_SPAWNS: "这些团队没有设置重生点!"
+    NO_ITEMSHOP_CATEGORIES: "没有找到商店!"
+    NO_MAIN_LOBBY_SET: "你没有设置一个大厅即使你开放了重要大厅"
+    TEAM_NO_WRONG_BED: "一个或多个团队没有床!"
+    TEAM_NO_WRONG_TARGET: "一个或多个团队没有设置重生点!"
+ingame:
+    teams: "队伍"
+    all: "全部"
+    record: "&e$record$&a是这张地图的最佳纪录!"
+    record-with-holders: "&a这张地图的最佳纪录时间是在 &e$record$&a 纪录刷新者是: $holders$"
+    newrecord: "&a团队 $team$ &a创造了新的纪录，时间为: &6$record$"
+    record-nobeddestroy: "&c记录不会被保存，因为没有被破坏的床!"
+    teamwon: "祝贺!  $team$ 获胜!"
+    draw: "游戏以平局结束!"
+    serverrestart: "房间将在$sec$秒内重启!"
+    gamestarting: "游戏开始中 ..."
+    gamestarted: "游戏正式开始!"
+    backtolobby: "将于$sec$秒后回到大厅!"
+    spectator: "观察者"
+    spectate: "&a观战"
+    teamchest: "团队箱子"
+    noturteamchest: "这只箱子不是你的团队的箱子!"
+    protectionleft: "&f重生无敌保护中,保护剩余 &c$length$ &f秒!"
+    protectionend: "&f你的 &c重生无敌 &f消失了!"
+    team-dead: "队伍 $team$ 被击败了!"
+    no-friendlybreak: "&e玩家 &r$player$ &e正在尝试破坏队友脚下的方块。"
+    teamchestdestroy: "&c一个我方团队箱子被摧毁了，是不是有人在偷家!"
+    title:
+        map-builder: "建造者 $builder$"
+        win-title: "&6祝贺你!"
+        win-subtitle: "$team$&6获胜! &e用时: &e$time$"
+    shop:
+        name: "物品商人"
+        newshop: "使用新商店"
+        oldshop: "使用旧商店"
+        fullstackpershift: SHIFT+左键购买更多物品
+        onestackpershift: SHIFT+左键购买一组物品
+    player:
+        left: "玩家 $player$ 离开了游戏!"
+        died: "$player$ 死亡了!"
+        killed: "$killer$ 击杀了 $player$!"
+        kicked: "$player$ &6被踢出了游戏!"
+        waskicked: "你被踢出了这场游戏!"
+    blocks:
+        ownbeddestroy: "别打自己家的床啊!"
+        beddestroyed: "$player$ 摧毁了队伍 $team$ 的基地!"
+    specials:
+        rescue-platform:
+            left: "你还需等待 &c$time$&f 秒才能再次使用救援平台!"
+        trap:
+            trapped: "&e某个玩家不小心踩进了你队伍的&c陷阱&e里！"
+        protection-wall:
+            left: "还有 &c$time$&f 秒你才能再次使用防护墙!"
+            not-usable-here: "你不能在这里使用防护墙!"
+        warp-powder:
+            cancelled: "&c你的传送被取消!"
+            start: "您将于 &c$time$&f 秒后被传送回城. 请不要移动!"
+            cancel: "&4传送取消"
+            multiuse: "&c你已经开始传送!"
+        tntsheep:
+            no-target-found: "没有找到目标玩家!"
+        tracker:
+            no-target-found: "没有找到目标玩家!"
+            target-found: "玩家 $player$ 距离你 $blocks$ 米左右."
+lobby:
+    countdown: "游戏将在$sec$秒内开始!"
+    countdowncancel: "需要更多的玩家,倒计时取消!"
+    cancelcountdown:
+        TEAMS_HAVE_PLAYERS: "一个队伍没有玩家,取消倒计时!"
+        PLAYERS_IN_GAME: "需要更多的玩家,倒计时取消!"
+        ENOUGH_TEAMS_AND_PLAYERS: "只有一个队伍有玩家,取消倒计时!"
+    chooseteam: "选择一个队伍"
+    startgame: "开始游戏"
+    gamefull: "游戏已满员!"
+    gamefullpremium: "这个游戏已经满员!"
+    teamjoined: "成功加入了 $team$"
+    leavegame: "离开游戏"
+    playerjoin: "玩家 $player$ 加入了起床战争!"
+    kickedbyvip: "您被未知原因请出服务器!"
+    moreplayersneeded: "还需要需要最少$count$位玩家来开始游戏."
+    moreplayersneeded-one: "还需要需要最少$count$位玩家开始游戏."
+    notenoughplayers-rule0: "需要更多的玩家开始游戏!"
+    notenoughplayers-rule1: "每个队需要一个玩家来开始比赛!"
+sign:
+    firstline: "&6[起床战争]"
+    players: "玩家"
+    gamestate:
+        stopped: "&4停用!"
+        waiting: "&a等待中 ..."
+        running: "&9游戏中!"
+        full: "满人!"
+stats:
+    header: "起床战争 统计"
+    kd: "K/D"
+    statsnotfound: "未找到 $player$ 的数据!"
+    name: "名字"
+    kills: "杀敌数"
+    deaths: "死亡数"
+    wins: "获胜"
+    loses: "失败"
+    score: "平局"
+    destroyedBeds: "摧毁床数"
+    games: "游戏局数"
+ressources:
+    gold: "&6金柯垃"
+    iron: "&7银柯垃"
+    bronze: "&4铜柯垃"
+commands:
+    addgame:
+        name: "Add Game"
+        desc: "这是没用指令"
+    addteam:
+        name: "Add Team"
+        desc: "这是没用指令"
+    join:
+        name: "Join Game"
+        desc: "加入一个游戏"
+    leave:
+        name: "Leave Game"
+        desc: "离开一个游戏"
+    save:
+        name: "Save Game"
+        desc: "这是没用指令"
+    settarget:
+        name: "Set target"
+        desc: "这是没用指令"
+    setbed:
+        name: "Set bed (synonym for settarget)"
+        desc: "这是没用指令"
+    setlobby:
+        name: "Set lobby"
+        desc: "这是没用指令"
+    setregion:
+        name: "Sets a region point"
+        desc: "这是没用指令"
+    setspawn:
+        name: "Sets a team spawn"
+        desc: "这是没用指令"
+    setspawner:
+        name: "Set spawner"
+        desc: "这是没用指令"
+    start:
+        name: "Start game"
+        desc: "这是没用指令"
+    stop:
+        name: "Stop game"
+        desc: "这是没用指令"
+    help:
+        name: "Show Help"
+        desc: "这是没用指令"
+    reload:
+        name: "Reload"
+        desc: "这是没用指令"
+    setmainlobby:
+        name: "Set main lobby"
+        desc: "这是没用指令"
+    list:
+        name: "List games"
+        desc: "这是没用指令"
+    regionname:
+        name: "Set region name"
+        desc: "这是没用指令"
+    removeteam:
+        name: "Remove team"
+        desc: "这是没用指令"
+    removegame:
+        name: "Remove game"
+        desc: "这是没用指令"
+    clearspawner:
+        name: "Clear spawners"
+        desc: "这是没用指令."
+    gametime:
+        name: "Set game time"
+        desc: "这是没用指令"
+    stats:
+        name: "Statistics"
+        desc: "这是没用指令"
+    setbuilder:
+        name: "Sets builder of map"
+        desc: "这是没用指令"
+    setgameblock:
+        name: "Set game block"
+        desc: "这是没用指令"
+    setautobalance:
+        name: "Set autobalance"
+        desc: "I这是没用指令"
+    kick:
+        name: "Kick player"
+        desc: "这是没用指令"
+    addteamjoin:
+        name: "Add team selection"
+        desc: "这是没用指令!"
+    addholo:
+        name: "Add hologram location"
+        desc: "A hologram statistic will be added at the current position!"
+    removeholo:
+        name: "Remove hologram location"
+        desc: "When the command was executed, the player can right-click the hologram which should be removed."
+        explain: "Perform a left click within 10 seconds on the hologram you want to remove."

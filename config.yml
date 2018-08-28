@@ -1,0 +1,226 @@
+# ###############################
+# ####### BEDWARS CONFIG ########
+# ##### CREATED BY YANNICI ######
+# ###############################
+# ###### EXPLANATION ABOUT ######
+# ##### EVERY CONFIGURATION #####
+# ### YOU CAN FIND ON GITHUB ####
+# ############ WIKI #############
+# ###############################
+# 
+# # TYPE HELP # #
+# int: number (not decimal)
+# string: a normal text (in most cases you can use colorcodes with a beginning §)
+# boolean: true or false (IMPORTANT: true OR false ONLY)
+# list<?>: a list of type ? (? is the type of the list items)
+# byte: a int but limited between -128 ... 127
+# short: a int but limited between -32768 ... 32767
+# char: one character
+
+chat-prefix: "&7[&3起床战争&7]&3"
+command-prefix: bw
+plugin-metrics: true
+global-messages: true
+global-autobalance: false
+global-chat-after-end: true
+gamelength: 60
+allow-crafting: false
+overwrite-names: false
+lobby-gamemode: 0
+holographic-stats:
+  show-prefix: false
+  name-color: '&7'
+  value-color: '&3'
+  head-line: "起床战争"
+teamname-on-tab: false
+teamname-in-chat: true
+hearts-on-death: true
+die-on-void: false
+lobbytime: 60
+lobby-chatformat: $player$ &b>>> &f$msg$
+ingame-chatformat-all: "[所有人] <$team$> $player$ &b>>> &f$msg$"
+ingame-chatformat: <$team$> $player$ &b>>> &f$msg$
+game-block: BED_BLOCK
+store-game-records: true
+store-game-records-holder: true
+bed-sound: ENDERDRAGON_GROWL
+player-drops: false
+place-in-liquid: true
+breakable-blocks:
+- none
+jointeam-entity:
+  show-name: true
+lobby-scoreboard:
+  enabled: true
+  title: "&3&l起床战争"
+  content:
+  - ' '
+  - "&f&l>&3游戏地图: &c&l$regionname$"
+  - "&f&l>&3游戏时间: &7&l60分钟"
+  - "&f&l>&3游戏人数: &7&l$players$&f&l/&7&l$maxplayers$"
+  - ' '
+  - "&a&l等待中 ..."
+  - ' '
+scoreboard:
+  format-bed-destroyed: '&c$status$ $team$'
+  format-bed-alive: '&a$status$ $team$'
+  format-title: "&e$regionname$&f - $time$"
+titles:
+  win:
+    enabled: true
+    title-fade-in: 1.5
+    title-stay: 5.0
+    title-fade-out: 2.0
+    subtitle-fade-in: 1.5
+    subtitle-stay: 5.0
+    subtitle-fade-out: 2.0
+  map:
+    enabled: false
+    title-fade-in: 1.5
+    title-stay: 2.0
+    title-fade-out: 1.5
+    subtitle-fade-in: 1.5
+    subtitle-stay: 2.0
+    subtitle-fade-out: 1.5
+  countdown:
+    enabled: true
+    format: '&3{countdown}'
+explodes:
+  destroy-worldblocks: false
+  destroy-beds: false
+  drop-blocking: false
+lobbycountdown-rule: 2
+friendlyfire: false
+friendlybreak: true
+gameoverdelay: 10
+chat-to-all-prefix: '@'
+seperate-game-chat: true
+seperate-spectator-chat: false
+statistics:
+  enabled: false
+  show-on-game-end: true
+  storage: yaml
+  bed-destroyed-kills: false
+  scores:
+    kill: 10
+    die: 0
+    win: 50
+    bed-destroy: 25
+    lose: 0
+    record: 100
+database:
+  host: 127.0.0.1
+  port: 3306
+  db: database
+  user: root
+  password: 123456
+  connection-pooling:
+    min-pool-size: 3
+    max-pool-size: 50
+spectation-enabled: true
+respawn-protection: 0
+allowed-commands:
+- /help
+endgame:
+  mainlobby-enabled: false
+  all-players-to-mainlobby: false
+bungeecord:
+  enabled: false
+  hubserver: hub
+  endgame-in-lobby: true
+  full-restart: true
+  spigot-restart: true
+  motds:
+    lobby: |
+      $regionname$
+      &7[&b$currentplayers$&7/&b$maxplayers$&7]
+    running: |
+      $regionname$
+      &7[&b$currentplayers$&7/&b$maxplayers$&7]
+    stopped: |
+      $regionname$
+      &c[Stopped]
+    full: |
+      $regionname$
+      &7[&b$currentplayers$&7/&b$maxplayers$&7]
+locale: ch
+ressource:
+  bronze:
+    item: CLAY_BRICK
+    spawn-interval: 1000
+    amount: 1
+    spread: 1.0
+    name: "&4铜坷垃"
+  iron:
+    item: IRON_INGOT
+    spawn-interval: 10000
+    amount: 1
+    spread: 1.0
+    name: "&7铁坷垃"
+  gold:
+    item: GOLD_INGOT
+    spawn-interval: 25000
+    amount: 1
+    spread: 1.0
+    name: "&6金坷垃"
+check-updates: false
+update-infos: false
+rewards:
+  enabled: false
+  player-win:
+  - /example {player} 200
+  player-end-game:
+  - /example {player} {score}
+  player-destroy-bed:
+  - /example {player} {score}
+  player-kill:
+  - /example {player} 10
+specials:
+  rescue-platform:
+    break-time: 10
+    using-wait-time: 20
+    item: BLAZE_ROD
+    can-break: true
+    block: STAINED_GLASS
+  protection-wall:
+    break-time: 0
+    wait-time: 20
+    can-break: true
+    item: BRICK
+    block: SANDSTONE
+    width: 5
+    height: 3
+    distance: 2
+  magnetshoe:
+    probability: 75
+    boots: IRON_BOOTS
+  warp-powder:
+    show-particles: true
+    particle: fireworksSpark
+    teleport-time: 6
+  trap:
+    duration: 10
+    blindness:
+      enabled: true
+      amplifier: 2
+    slowness:
+      enabled: true
+      amplifier: 2
+    weakness:
+      enabled: true
+      amplifier: 2
+    show-particles: true
+    play-sound: true
+  tntsheep:
+    fuse-time: 8.0
+    speed: 0.4
+    explosion-factor: 1.0
+sign:
+  first-line: $title$
+  second-line: $regionname$
+  third-line: Players &7[&b$currentplayers$&7/&b$maxplayers$&7]
+  fourth-line: $status$
+player-settings:
+  one-stack-on-shift: false
+overwrite-display-names: true
+lobbytime-full: 15

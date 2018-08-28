@@ -1,0 +1,483 @@
+### SHOP ###
+### NOT ALLOWED CATEGORY MATERIAL: SLIME_BALL, SNOW_BALL, BUCKET, LAVA_BUCKET
+### The categories (unique key!)
+###### Categories:
+###### item:
+######  type: string or int
+######  Itemname or Item-ID which should be 
+######  displayed to represent the category
+###### name: 
+######  type: string
+######  Name of the category
+###### lore:
+######  type: list<string>
+######  The lore (description) the category should have.
+###### order:
+######  type: int
+######  The order the categories will be displayed
+######### Offers:
+######### item1 (first trade item):
+#########  item: 
+#########   type: string or int
+#########   Item-Name or Item-ID
+#########  amount: 
+#########   type: int
+#########   The stack amount the item should have
+#########  name:
+#########   type: string (colorcodes with &)
+#########   A specific name for the item
+#########  enchants:
+#########   key: Has to be the enchant-ID or enchant-name!
+#########   value: The level of the enchant
+#########  lore:
+#########   type: list<string> (colorcodes with &)
+#########   The lores this item should have
+#########  meta:
+#########   type: short (potion) or byte (any other item)
+#########   The meta byte which should be added to the item
+######### item2 (optional, second trade item): See item1
+######### reward (reward item): See item1
+shop:
+    armor:
+        item: DIAMOND_CHESTPLATE
+        name: "&e&l防具大全" 
+        order: 10
+        permission: bw.base
+        lore:
+            - "&b&l你可能需要一些护盾来增强你的实力"
+        offers:
+            - item1:
+                item: CLAY_BRICK
+                amount: 1
+              reward:
+                item: LEATHER_HELMET
+                amount: 1
+                enchants:
+                    0: 1
+            - item1:
+                item: CLAY_BRICK
+                amount: 1
+              reward:
+                item: LEATHER_LEGGINGS
+                amount: 1
+                enchants:
+                    0: 1
+            - item1:
+                item: CLAY_BRICK
+                amount: 1
+              reward:
+                item: LEATHER_BOOTS
+                amount: 1
+                enchants:
+                    0: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 6
+              item2:
+                item: GOLD_INGOT
+                amount: 1
+              reward:
+                name: '&a防击退靴子'
+                lore:
+                  - "75%抵消击退效果"
+                item: IRON_BOOTS
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 1
+              reward:
+                item: 303
+                amount: 1
+                enchants:
+                    0: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                item: 303
+                amount: 1
+                enchants:
+                    0: 2
+            - item1:
+                item: IRON_INGOT
+                amount: 7
+              reward:
+                item: 303
+                amount: 1
+                enchants:
+                    0: 3
+            - item1:
+                item: GOLD_INGOT
+                amount: 10
+              reward:
+                namecolor: RED
+                item: 306
+                amount: 1
+                enchants:
+                    0: 2
+    swords:
+        item: DIAMOND_SWORD
+        name: "&e&l近战武器"
+        order: 20
+        permission: bw.base
+        lore:
+            - "&b&l有了这些武器,麻麻再也不用担心我被虐了"
+        offers:
+            - item1:
+                item: CLAY_BRICK
+                amount: 8
+              reward:
+                name: '&e击退棒'
+                lore:
+                    - "&b&l一棍子教你做人！"
+                item: 280
+                amount: 1
+                enchants:
+                    19: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 1
+              reward:
+                item: 283
+                amount: 1
+                enchants:
+                    16: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                item: 283
+                amount: 1
+                enchants:
+                    16: 2
+            - item1:
+                item: IRON_INGOT
+                amount: 7
+              reward:
+                item: 283
+                amount: 1
+                enchants:
+                    16: 3
+            - item1:
+                item: GOLD_INGOT
+                amount: 3
+              reward:
+                name: '&f大宝剑'
+                lore:
+                    - "&b&l俗说大宝剑配喝大力,出奇迹!"
+                item: 267
+                amount: 1
+                enchants:
+                    16: 2
+                    19: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 15
+              reward:
+                name: '&6箱子克星'
+                lore:
+                    - "&b&l毁坏箱子的利器!"
+                namecolor: GOLD
+                item: 286
+                amount: 1
+                enchants:
+                    34: 1
+                    16: 1
+                    19: 1
+    bows:
+        item: 261
+        name: "&e&l远程武器"
+        order: 30
+        permission: bw.base
+        lore:
+            - "&b&l弓箭在手,杀敌于千里之外"
+        offers:
+            - item1:
+                item: GOLD_INGOT
+                amount: 3
+              reward:
+                item: 261
+                amount: 1
+                enchants:
+                    51: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 7
+              reward:
+                item: 261
+                amount: 1
+                enchants:
+                    51: 1
+                    48: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 13
+              reward:
+                item: 261
+                amount: 1
+                enchants:
+                    51: 1
+                    48: 2
+            - item1:
+                item: GOLD_INGOT
+                amount: 15
+              reward:
+                name: '&c火弓'
+                item: 261
+                amount: 1
+                enchants:
+                    51: 1
+                    50: 1
+                    49: 1
+            - item1:
+                item: GOLD_INGOT
+                amount:
+              reward:
+                item: 262
+                amount: 2
+    pickaxes:
+        item: DIAMOND_PICKAXE
+        name: "&e&l工匠铺"
+        order: 40
+        permission: bw.base
+        lore:
+            - "&b&l河神:少年,这把金稿子是你的咩?"
+        offers:
+            - item1:
+                item: CLAY_BRICK
+                amount: 4
+              reward:
+                item: IRON_PICKAXE
+                amount: 1
+                enchants:
+                    35: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 2
+              reward:
+                item: IRON_PICKAXE
+                amount: 1
+                enchants:
+                    35: 2
+            - item1:
+                item: GOLD_INGOT
+                amount: 1
+              reward:
+                item: IRON_PICKAXE
+                amount: 1
+                enchants:
+                    35: 3
+    eat:
+        item: GRILLED_PORK
+        name: "&e&l零食店"
+        order: 50
+        permission: bw.base
+        lore:
+            - "&b&l吃点辣条,缓解饥饿活力无限"
+        offers: 
+            - item1:
+                item: CLAY_BRICK
+                amount: 4
+              reward:
+                item: GRILLED_PORK
+                amount: 2
+            - item1:
+                item: IRON_INGOT
+                amount: 2
+              reward:
+                item: 322
+                amount: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 5
+              reward:
+                item: 297
+                amount: 10
+    blocks:
+        item: SANDSTONE
+        name: "&e&l建材市场"
+        order: 60
+        permission: bw.base
+        lore:
+            - "&b&l想要富,先修路.想要强,先堵床"
+        offers:
+            - item1:
+                item: CLAY_BRICK
+                amount: 1
+              reward:
+                item: 24
+                meta: 2
+                amount: 2
+            - item1:
+                item: CLAY_BRICK
+                amount: 7
+              reward:
+                item: 121
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                item: 42
+                amount: 1
+            - item1:
+                item: CLAY_BRICK
+                amount: 15
+              reward:
+                item: 89
+                amount: 4
+            - item1:
+                item: CLAY_BRICK
+                amount: 4
+              reward:
+                item: 20
+                amount: 1
+    usefulstuff:
+        item: TNT
+        name: "&e&l米奇妙妙屋"
+        order: 70
+        permission: bw.base
+        lore:
+            - "&b&l用妙妙屋里的增幅道具更加轻松的取胜吧"
+        offers:
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                name: '&c&lTNT'
+                lore:
+                    - "&b&l熊孩子利器"
+                item: TNT
+                amount: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 1
+              reward:
+                lore:
+                    - "&b&l熊孩子利器"
+                item: 259
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 1
+              reward:
+                item: 54
+                amount: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 1
+              reward:
+                item: 130
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 15
+              reward:
+                name: '&c急救平台'
+                lore:
+                    - "&b&l在空中使用该平台"
+                    - "&b&l将在脚下生成一块临时平台救生!"
+                item: 369
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                name: '&7陷阱'
+                lore:
+                    - "&b&l将陷阱放在地上"
+                    - "&b&l敌人踩中将会出现各种伤害效果!"
+                item: 287
+                amount: 1
+            - item1:
+                item: CLAY_BRICK
+                amount: 64
+              reward:
+                name: '&4防护墙'
+                lore:
+                    - "&b&l使用防护墙后"
+                    - "&b&l将在身前声称一面5x3的墙壁!"
+                item: BRICK
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 7
+              reward:
+                name: '&f回城卷轴'
+                lore:
+                    - "&b&l拿在手里右键使用"
+                    - "&b&l将在6秒后传送到出生点."
+                    - "&c&l注意:移动将会取消传送!"
+                item: 289
+                amount: 1
+            - item1:
+                item: GOLD_INGOT
+                amount: 10
+              reward:
+                name: '&cTNT羊'
+                lore:
+                    - "&b&l通过黑魔法召唤出一只绑满TNT的羊"
+                    - "&b&l他将冲向你的对手"
+                    - "&b&l并在8秒后爆炸!"
+                item: MONSTER_EGG
+                meta: 91
+                amount: 1
+            - item1:
+                item: IRON_INGOT
+                amount: 5
+              reward:
+                name: '&a跟踪钟'
+                lore:
+                    - "&b&l担心找不到将临死的玩家?"
+                    - "&b&l跟踪种将指向玩家的大概位置!"
+                item: COMPASS
+                amount: 1
+    drinks:
+        item: POTION
+        name: "&e&l女巫酒馆"
+        order: 80
+        permission: bw.base
+        lore:
+            - "&b&l女巫酒馆中有各种药水,善用它们吧!"
+        offers:
+            - item1:
+                item: IRON_INGOT
+                amount: 3
+              reward:
+                item: 373
+                amount: 1
+                meta: 8197
+            - item1:
+                item: IRON_INGOT
+                amount: 5
+              reward:
+                item: 373
+                amount: 1
+                meta: 8229
+            - item1:
+                item: IRON_INGOT
+                amount: 4
+              reward:
+                name: '&9速特药水'
+                lore:
+                    - "&b&l三十六计走为上计!"
+                item: 373
+                amount: 1
+                meta: 8194
+            - item1:
+                item: GOLD_INGOT
+                amount: 1
+              reward:
+                name: '&c大力'
+                lore:
+                    - "&b&l喝大力,果然出奇迹!"
+                item: 373
+                amount: 1
+                meta: 8201
+            - item1:
+                item: GOLD_INGOT
+                amount: 3
+              reward:
+                item: 373
+                amount: 1
+                meta: 8193
